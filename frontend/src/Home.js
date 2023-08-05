@@ -15,8 +15,8 @@ function Home() {
         Welcome Back, {currUser.firstName || currUser.username}! 
       </h2>
       : (<div className="Home-buttons">
-      <Link href="/login" className="Home-buttons login">Log In</Link>
-      <Link href="/signup" className="Home-buttons signup">Sign Up</Link>
+      <Link to="/login" className="Home-buttons login">Log In</Link>
+      <Link to="/signup" className="Home-buttons signup">Sign Up</Link>
     </div>
     )}  
     </div>
