@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./Home.css";
 import UserContext from "./auth/UserContext";
+import { Link } from "react-router-dom";
 
 function Home() {
   const { currUser } = useContext(UserContext);
@@ -14,8 +15,8 @@ function Home() {
         Welcome Back, {currUser.firstName || currUser.username}! 
       </h2>
       : (<div className="Home-buttons">
-      <a href="/login" className="Home-buttons login">Log In</a>
-      <a href="/signup" className="Home-buttons signup">Sign Up</a>
+      <Link href="/login" className="Home-buttons login">Log In</Link>
+      <Link href="/signup" className="Home-buttons signup">Sign Up</Link>
     </div>
     )}  
     </div>
