@@ -1,0 +1,68 @@
+
+/* JobCard.css */
+
+.JobCard .title {
+  margin-top: 0;
+}
+
+.JobCard {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #8a86868e;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.445);
+  transition: box-shadow 0.3s ease;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.JobCard .company-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0; /* Set margin to 0 to remove any spacing */
+}
+
+.JobCard p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.JobCard a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.JobCard a:hover {
+  color: blue;
+}
+
+.JobCard img {
+  max-width: 100px;
+  max-height: 100px;
+  display: block;
+  margin: 10px auto;
+  object-fit: contain;
+}
+
+.JobCard button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.JobCard button:hover {
+  background-color: #555;
+}
+
+.JobCard button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
